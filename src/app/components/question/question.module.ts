@@ -2,10 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { QuestionComponent } from './question.component';
 import { QuestionRoutingModule } from './question-routing.module';
+import { Question4Component } from './question4/question4.component';
+import { Question5Component } from './question5/question5.component';
 
 @NgModule({
   declarations: [
-    QuestionComponent
+    QuestionComponent,
+    Question4Component,
+    Question5Component
   ],
   imports: [
     CommonModule,
