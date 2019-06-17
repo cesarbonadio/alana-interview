@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-question',
@@ -7,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionComponent implements OnInit {
 
-  constructor() { }
+  /*private isQuestion4Active: boolean;
+  private isQuestion5Active: boolean;*/
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    console.log("Inicia el modulo de preguntas");
   }
 
 }

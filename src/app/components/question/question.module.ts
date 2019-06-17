@@ -4,6 +4,7 @@ import { QuestionComponent } from './question.component';
 import { QuestionRoutingModule } from './question-routing.module';
 import { Question4Component } from './question4/question4.component';
 import { Question5Component } from './question5/question5.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,9 @@ import { Question5Component } from './question5/question5.component';
   ],
   imports: [
     CommonModule,
-    QuestionRoutingModule
+    QuestionRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class QuestionModule { }
