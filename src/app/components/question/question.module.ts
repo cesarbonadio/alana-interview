@@ -6,6 +6,7 @@ import { Question4Component } from './question4/question4.component';
 import { Question5Component } from './question5/question5.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ComputeService } from '../../util/compute.service';
+import { ApiRequesterService } from '../../util/api-requester.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ComputeService } from '../../util/compute.service';
     ReactiveFormsModule
   ],
   providers:[
-    ComputeService
+    ComputeService,
+    ApiRequesterService
   ]
 })
 export class QuestionModule { }

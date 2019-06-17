@@ -16,8 +16,7 @@ import { ComputeService } from '../../../util/compute.service';
 })
 export class Question4Component implements OnInit {
 
-  public   resultObject: Array<Object>;
-
+  public resultObject: Array<Object>;
 
   public numberForm: FormGroup = new FormGroup({
     Inumber1: new FormControl(null, [
@@ -39,6 +38,7 @@ export class Question4Component implements OnInit {
     let a = this.numberForm.get('Inumber1').value;
     let b = this.numberForm.get('Inumber2').value;
     this.resultObject = this._computeService.computeAlgorithm(a,b);
+    console.log(this.resultObject);
   }
 
   goBack(){
