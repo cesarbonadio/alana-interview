@@ -1,5 +1,5 @@
 <p>
-  question5 works!
+  Pregunta 5
 </p>
 
 <form [formGroup]="numberForm" (ngSubmit)="onSubmit()">
@@ -33,12 +33,13 @@
       </div>
     </div>
   </div>
+  <div class ="grupo-botones">
     <button
       [disabled]="!numberForm.valid"
       class="btn btn-outline-info"
       type="submit"
     >
-      Guardar
+      Calcular
     </button>
     <button
       class="btn btn-outline-danger"
@@ -53,4 +54,5 @@
         <td> --> </td>
         <td>{{e.sum}}</td>
     </tr>
+    </div>
 </form>

@@ -8,9 +8,6 @@ import { Router } from '@angular/router';
 })
 export class QuestionComponent implements OnInit {
 
-  /*private isQuestion4Active: boolean;
-  private isQuestion5Active: boolean;*/
-
   constructor(private router: Router) { }
 
   ngOnInit() {

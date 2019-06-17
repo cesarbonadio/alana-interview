@@ -1,0 +1,20 @@
+p {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 92px;
+}
+.row{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.grupo-botones{
+  width: 20%;
+  margin-left: 92px;
+}
+button{
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.custom-file{
+  margin-top: 20px;
+}
