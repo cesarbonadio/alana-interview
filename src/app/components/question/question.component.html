@@ -1,8 +1,9 @@
 <div class="container">
 <p>
-  question works!
+  Seleccionar pregunta
 </p>
-<a routerLink="/preguntas/pregunta-4">
+<div class="botones-preguntas">
+<a routerLink="/preguntas/pregunta-4" class="btn btn-primary btn-sm active" role="button" >
       <i class="fa fa-cutlery">
       </i>
       &nbsp;
@@ -10,7 +11,7 @@
         Pregunta 4
       </span>
 </a>
-<a routerLink="/preguntas/pregunta-5">
+<a routerLink="/preguntas/pregunta-5" class="btn btn-primary btn-sm active" role="button" >
       <i class="fa fa-cutlery">
       </i>
       &nbsp;
@@ -18,5 +19,6 @@
         Pregunta 5
       </span>
 </a>
+</div>
 <router-outlet></router-outlet>
 </div>

@@ -1,0 +1,11 @@
+.container {
+  margin-top: 30px;
+}
+p {
+  text-align: center;
+  font-size: 1.3em;
+  width: 100%;
+}
+.botones-preguntas {
+  text-align: center;
+}
