@@ -19,7 +19,17 @@ export class ComputeService {
   public computeAlgorithm(a: number,b: number): Array<Object>{
     let divisors = [];
     let index = 0;
-    for (let i=a; i<=b; i++){
+    let from = 0;
+    let to = 0;
+
+    if (a>b) {
+       from = b;
+       to = a;
+    } else {
+       from = a;
+       to = b;
+    }
+    for (let i=from; i<=to; i++){
       let sum = this.sumOfDivisors(i);
       if(this.isSquare(sum)){
         divisors[index]={
@@ -31,5 +41,5 @@ export class ComputeService {
     }
     return divisors;
   }
-  
+
 }
