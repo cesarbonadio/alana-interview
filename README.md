@@ -1,27 +1,29 @@
 # AlanaInterview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.10.
+## Pregunta 4
 
-## Development server
+Realizar una aplicación en Angular4 donde se refleje la descripción, el flujo y los resultados
+para el siguiente ejercicio:
+Suponiendo un número entero positivo n. Se tiene que f(n) corresponde a la sumatoria
+de los cuadrados de los divisores de n.
+Implementar un algoritmo que dados el valor inicial y final de n (ambos incluyéndose),
+halle la sumatoria de todos valores de n para el intervalo indicado, tal que f(n) es un
+cuadrado perfecto. En la salida debe especificarse a qué valor de n pertenece la f(n).
+Por ejemplo:
+f(10 - 90) = Array ( [42] => 2500 )
+f(50 - 450) = Array ( [246] => 84100 [287] => 84100 )
+Nota: un cuadrado perfecto es un número cuya raíz cuadrada es un número natural.
+Deberá utilizar Angular4 como framework de desarrollo para la implementación de la lógica
+del ejercicio, manteniendo las buenas prácticas de desarrollo basándose en los fundamentos
+básicos del framework (servicios, componentes, navegación, etc) para cumplir con la filosofía
+de la separación de responsabilidades (archivo de utilidades, dominio, capa lógica y capa de
+datos).
+Adicionalmente, realizar un diseño agradable para la entrada y salida de datos, así como las
+validaciones necesarias para el formulario.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Pregunta 5
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Supongamos que ahora la salida (output) es proporcionada por un API, dicho API presenta
+un alto tráfico de consumo, por lo que las respuestas no son inmediatas. Se requiere crear una
+promesa que maneje esta llamada hacia nuestro servidor donde persista dicho tráfico.
