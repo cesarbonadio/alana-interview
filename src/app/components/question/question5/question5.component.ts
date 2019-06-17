@@ -16,6 +16,7 @@ import { ApiRequesterService } from '../../../util/api-requester.service';
 export class Question5Component implements OnInit {
 
   public  resultObject: Array<Object>;
+  public submitted: boolean;
 
   public numberForm: FormGroup = new FormGroup({
     Inumber1: new FormControl(null, [
@@ -29,6 +30,7 @@ export class Question5Component implements OnInit {
   });
 
   constructor( private _location: Location, private _apiRequester : ApiRequesterService) {
+    this.submitted = false;
   }
 
   ngOnInit() {}
@@ -44,7 +46,8 @@ export class Question5Component implements OnInit {
     this._apiRequester
         .get(a,b)
         .then(response => {
-              this.resultObject = response
+              this.resultObject = response,
+              this.submitted = true
         });
   }
 

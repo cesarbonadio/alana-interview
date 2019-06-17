@@ -17,6 +17,7 @@ import { ComputeService } from '../../../util/compute.service';
 export class Question4Component implements OnInit {
 
   public resultObject: Array<Object>;
+  public submitted: boolean;
 
   public numberForm: FormGroup = new FormGroup({
     Inumber1: new FormControl(null, [
@@ -30,6 +31,7 @@ export class Question4Component implements OnInit {
   });
 
   constructor(private _location: Location, private _computeService: ComputeService) {
+    this.submitted = false;
   }
 
   ngOnInit() {}
@@ -39,6 +41,7 @@ export class Question4Component implements OnInit {
     let b = this.numberForm.get('Inumber2').value;
     this.resultObject = this._computeService.computeAlgorithm(a,b);
     console.log(this.resultObject);
+    this.submitted = true;
   }
 
 }
