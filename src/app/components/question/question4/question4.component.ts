@@ -41,8 +41,4 @@ export class Question4Component implements OnInit {
     console.log(this.resultObject);
   }
 
-  goBack(){
-    this._location.back();
-  }
-
 }

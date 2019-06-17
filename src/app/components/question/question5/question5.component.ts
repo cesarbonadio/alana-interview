@@ -48,8 +48,4 @@ export class Question5Component implements OnInit {
         });
   }
 
-  goBack(){
-    this._location.back();
-  }
-
 }

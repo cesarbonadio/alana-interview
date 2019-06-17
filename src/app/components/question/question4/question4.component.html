@@ -40,18 +40,23 @@
     >
       Calcular
     </button>
-    <button
-      class="btn btn-outline-danger"
-      (click) = "goBack()"
-      title="Atrás"
-      type="button"
-    >
-      Atrás
-    </button>
-    <tr *ngFor = "let e of resultObject">
-        <td>{{e.number}}</td>
-        <td> --> </td>
-        <td>{{e.sum}}</td>
-    </tr>
+    </div>
+    <div class="container" style="width:50%;">
+    <div class="table-responsive">
+          <table class="table  table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Numero</th>
+            <th scope="col">Factor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let e of resultObject">
+              <td>{{e.number}}</td>
+              <td>{{e.sum}}</td>
+          </tr>
+        </tbody>
+        </table>
+    </div>
     </div>
 </form>

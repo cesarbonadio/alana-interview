@@ -8,13 +8,16 @@ p {
   margin-right: 80px;
 }
 .grupo-botones{
-  width: 20%;
-  margin-left: 92px;
+  text-align: center;
 }
 button{
   margin-right: 10px;
   margin-bottom: 10px;
 }
-.custom-file{
-  margin-top: 20px;
+form {
+  margin-top: 50px;
+}
+.table-responsive{
+   margin-top: 20px;
+   text-align: center;
 }
