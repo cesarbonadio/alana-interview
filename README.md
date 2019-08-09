@@ -22,6 +22,7 @@ Adicionalmente, realizar un diseño agradable para la entrada y salida de datos,
 validaciones necesarias para el formulario.
 
 
+
 ## Pregunta 5
 
 Supongamos que ahora la salida (output) es proporcionada por un API, dicho API presenta
